@@ -1,0 +1,45 @@
+body {
+ 	font-family: 'Roboto', sans-serif; 
+	text-align: center;
+}
+
+hr {
+	width: 10%;
+	height: 20px;
+	border: none;
+	border-top: 10px dotted #e6bb0f;
+	margin: 20px auto;
+}
+
+header {
+    display: grid;
+    height: 120px;
+    min-width: 120px;
+	color: white;
+	text-shadow: 2px 2px 8px black;
+	background-image: url(../img/hand-painted-watercolor-background-with-sky-clouds-shape.jpg);
+	position: right center;
+}
+.item {
+	width: 50%;
+	margin: 100px auto;
+	text-align: left;
+	line-height: 2;
+}
+
+#footer{
+	padding: 20px;
+	background-color: #A9A9A9A9;
+}
+
+#bold {
+	font-weight: bold;
+}
+
+.img-ski {
+	float: left;
+}
+
+.img-beach {
+	float: right;
+}
