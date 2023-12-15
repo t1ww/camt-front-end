@@ -4,23 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Add Link to google fonts here -->
-
+    
+    <!-- Hepta slab (weight 600) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap" rel="stylesheet">
+    
+    <!-- Roboto font (weight 100) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
 
     <title>Trillium Media Design</title>
     <style>
       body {
         background-color: #283618;
         color: #fefae0;
+        font-family: "Roboto", sans-serif;
       }
       h1 {
         background-color: #606c38;
         color: #fefae0;
         line-height: 200%;
+        padding: 15px;
+        font-family: "Hepta slab", sans-serif;
       }
       h2 {
         background-color: #bc6c25;
         color: #fefae0;
+        font-family: "Hepta slab", sans-serif;
+        border-bottom: dashed #fafae0 2px;
+        text-align: center;
       }
       p {
         font-size: 0.9em;
@@ -35,35 +49,50 @@
       a {
         color: #fefae0;
       }
+
+      #footer {
+        border-top: thin solid #606c38;
+        padding-top: 10px;
+        margin-top: 100px;
+        text-decoration-color: gray;
+        text-align: center;
+      }
+
+      .container {
+        width: 80%;
+        margin: 0 auto;
+      }
     </style>
   </head>
 
   <body>
-    <h1>&nbsp;Trillium Media Design</h1>
-    <div>
-      <a href="index.html">Home</a> <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
-    </div>
-    <h2>New Media and Web Design</h2>
-    <p>
-      Trillium Media Design will bring your company's Web presence to the next
-      level. We offer a comprehensive range of services:
-    </p>
-    <ul>
-      <li>Website Design</li>
-      <li>Interactive Animation</li>
-      <li>E-Commerce Solutions</li>
-      <li>Usability Studies</li>
-      <li>Search Engine Optimization</li>
-    </ul>
-    <h2>Meeting Your Business Needs</h2>
-    <p>
-      Our expert designers are creative and eager to work with you. Take
-      advantage of the power of Web 2.0!
-    </p>
+    <p class="container">
+      <h1>&nbsp;Trillium Media Design</h1>
+      <div>
+        <a href="index.html">Home</a> <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <h2>New Media and Web Design</h2>
+      <p>
+        Trillium Media Design will bring your company's Web presence to the next
+        level. We offer a comprehensive range of services:
+      </p>
+      <ul>
+        <li>Website Design</li>
+        <li>Interactive Animation</li>
+        <li>E-Commerce Solutions</li>
+        <li>Usability Studies</li>
+        <li>Search Engine Optimization</li>
+      </ul>
+      <h2>Meeting Your Business Needs</h2>
+      <p>
+        Our expert designers are creative and eager to work with you. Take
+        advantage of the power of Web 2.0!
+      </p>
 
-    <div>
-      <p>Copyright &copy; 2012 Your Name Here</p>
-    </div>
+      <div id="footer">
+        <p>Copyright &copy; 2012 Your Name Here</p>
+      </div>
+    </p>
   </body>
 </html>

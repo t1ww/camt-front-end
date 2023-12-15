@@ -1,5 +1,7 @@
 .container {
   /* The width and height of the Container element are auto and 600px. */
+  width: auto;
+  height: 600px auto;
   position: relative;
 }
 
