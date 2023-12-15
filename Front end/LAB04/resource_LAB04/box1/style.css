@@ -1,0 +1,16 @@
+.box {
+  /* Each box is 100x100 pixels, with a 1px line (color: #687291) on top. */
+}
+
+.align {
+  /* All boxes are centered horizontally even as the window resizes. 
+    Boxes are separated by 10 pixels of space.  */
+}
+
+.font {
+  /* Text is centered horizontally. 
+       The font in all elements is Tahoma, 40 pixels.
+       Text is centered horizontally. */
+}
+
+/* Add new classes to make boxes colored and bordered according to the design in the labs */
