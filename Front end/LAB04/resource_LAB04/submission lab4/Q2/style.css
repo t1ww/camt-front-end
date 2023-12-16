@@ -1,0 +1,38 @@
+.box {
+  /* Each box is 100x100 pixels, with a 1px line (color: #687291) on top. */
+  width: 100px;
+  height: 100px;
+  border-top: solid 1px #687291;
+}
+
+.align {
+  /* All boxes are centered horizontally even as the window resizes. 
+    Boxes are separated by 10 pixels of space.  */
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.font {
+  /* Text is centered horizontally. 
+       The font in all elements is Tahoma, 40 pixels.
+       Text is centered horizontally. */
+       text-align: center;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 40px;
+}
+
+.boxlg {
+  background-color:  #eeeff2;
+}
+.boxdg {
+  background-color: #dfe1e7;
+}
+.boxbd {
+  background-color: #687291;
+  border: solid black 4px;
+}
+
+.container {
+  margin: 0 auto;
+}
+/* Add new classes to make boxes colored and bordered according to the design in the labs */
