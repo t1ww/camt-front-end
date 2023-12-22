@@ -1,0 +1,22 @@
+/* Configure the container's padding 2%  */
+.container{
+
+  }
+
+ /* Style the padding of the responsive columns 20px  */
+.letter-column {
+
+}
+
+/* Style each box border solid 1px and conner rounded 25px*/
+.border {
+
+}
+
+/* Style each box's height 200px*/
+.box {
+
+}
+
+/* Add hierarchical selector to make <p> element inside the box element vertically center, font's size 5rem and color maroon */
+ 

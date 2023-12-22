@@ -44,7 +44,7 @@ nav a:visited {
   display: inline-block;
   text-decoration: none;
   
-  margin-inline: .1em;
+  margin-inline: 10%;
 }
 
 
@@ -80,13 +80,13 @@ nav a:visited {
     height: auto;
     width: 100%;
     margin: 0 auto;
-    border-radius: 0.5em;/*"Border of images must have a radius of 0.5 em" ; */
+    border-radius: .5em;/*"Border of images must have a radius of 0.5 em" ; */
   }
   nav a:link,
   nav a:visited {
 
     /* set margin space between each image flex items to be 10% */
-    margin-inline: .1em;
+      margin-inline: 10%;
 
   }
 

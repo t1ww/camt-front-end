@@ -1,0 +1,77 @@
+/* HTML element */
+body {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+
+/* Container */
+.container-fluid {
+  padding:  7% 15%;
+}
+
+
+/* Navigation Bar*/
+
+.navbar {
+  /* style the navbar's padding bottom 4rem */
+  
+}
+
+.navbar-brand {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.nav-item {
+  /* style the nav-item's padding 0 18px */
+  
+}
+
+.nav-link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+
+
+
+/* title */
+#title .container-fluid {
+  padding:  3% 15% 7%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Feature section   */
+
+
+
+
+
+
+
+
+/* Download section */
+
+
+
+
+
+/* footer section*/
+
