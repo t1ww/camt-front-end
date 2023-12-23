@@ -5,7 +5,13 @@ body {
 }
 h1,h2,h3,h4,h5,h6 {
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+  color: white;
+}
+h1{
+  text-align: left;
 }
 
 
@@ -13,13 +19,17 @@ h1,h2,h3,h4,h5,h6 {
 .container-fluid {
   padding:  7% 15%;
 }
+ul {
+  text-decoration: gray;
+  font-weight: 400;
+}
+
 
 
 /* Navigation Bar*/
-
 .navbar {
   /* style the navbar's padding bottom 4rem */
-  
+  padding-bottom: 4rem;
 }
 
 .navbar-brand {
@@ -30,7 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .nav-item {
   /* style the nav-item's padding 0 18px */
-  
+  padding: 0 18px;
 }
 
 .nav-link {
@@ -39,39 +49,84 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 200;
 }
 
-
-
-
 /* title */
-#title .container-fluid {
-  padding:  3% 15% 7%;
+#title .container-fluid:nth-of-type(1) {
+  padding:  3% 15% 7% 15%;
+
+}
+img{
+  width: 40%;
+  rotate: 25deg;
 
 }
 
 
-
-
-
-
-
-
-
-
-
 /* Feature section   */
-
-
-
-
-
+#features {
+  line-height: 1.5;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-bottom: 7%;
+}
+#features .container-fluid {
+  padding-inline: 5%;
+}
+#features h3{
+  color: black;
+  font-size: 1.75em;
+}
+#feature p {
+}
+.fas {
+  color: #ef8172;
+}
 
 
 
 /* Download section */
-
-
-
-
+#download .container-fluid{
+  padding-inline: 15%;
+}
+#download h3 {
+  text-align: left;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;
+}
+#download button {
+  border: none;
+  border-radius: 4px;
+  font-size: 1.25rem;
+  margin: 5% 3% 5% 0%;
+  padding: 6px;
+  padding-inline: 1rem;
+}
+#download button:nth-of-type(1){
+  color: white;
+  background-color: black;
+}
 
 /* footer section*/
+#footer .container-fluid{
+  padding-left: 15%;
+  padding-bottom: 7%;
+}
+#footer li {
+  display: inline-block;
+  margin-inline: 5px;
+}
+#footer .fas{
+  color: black;
+}
+#footer p {
+  color: #8f8f8f;
+  margin-left: 20px;
+}
 
+/* bg colors */
+.bg-red {
+  background-color: #ff4c68;
+}
+.bg-white {
+  background-color: #fff;
+}
