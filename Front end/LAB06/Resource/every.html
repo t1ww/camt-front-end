@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <title></title>
+  </head>
+
+  <body>
+    <p>Lab 0ุ6 - Higher order functions</p>
+
+    <ul></ul>
+
+    <script>
+      function every(array, predicate) {
+        // Function "every()" takes TWO parameters
+        // - “array” as an array and
+        // - “predicate” as a callback function.
+
+        // Higher-order function "every()" calls the callback function "predicate()"
+        // to check if the element is TRUE/FALSE by the logic of the callback function
+
+        // "every()" will return TRUE if all element of "array" are TURE by the logic of callback function "predicate()"
+        // Do NOT modify any code here.
+        for (let element of array) {
+          if (!predicate(element)) return false;
+        }
+        return true;
+      }
+
+      function isLessTen(n) {
+        // 1. Modify isLessTen which returns TRUE if 'n' is LESS than 10
+        // This function will be used as a callback function for 'every()' function
+        if(n < 10) return true;
+        //
+        return false;
+      }
+
+      function isOverTen(n) {
+        // 2. Modify isOverTen which returns TRUE if 'n' is MORE than 10
+        // This function will also be used as a callback function for 'every()' function
+        if(n > 10) return true;
+        //
+        return false;
+      }
+
+      // 3. Test the calling of function 'every' by specify an "array" and a "predicate" function
+      
+      // 3.1 Use "isLessTen" function to pass in as input for 'predicate' parameter.
+      //  Use "array" sets of [1, 3, 5], [2, 4, 16] and [21, 12, 55] for each call of 'every()' function
+
+      console.log(every([1, 3, 5], isLessTen ));
+      console.log(every([2, 4, 16], isLessTen ));
+      console.log(every([21, 12, 55], isLessTen ));
+
+
+      // 3.2 Use "isOverTen" function to pass in as input for 'predicate' parameter.
+      //  Use "array" sets of [1, 3, 5], [2, 4, 16] and [21, 12, 55] for each call of 'every()' function
+
+      console.log(every([1, 3, 5], isOverTen ));
+      console.log(every([2, 4, 16], isOverTen ));
+      console.log(every([21, 12, 55], isOverTen ));
+
+
+    </script>
+  </body>
+</html>

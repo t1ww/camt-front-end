@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns:mso="urn:schemas-microsoft-com:office:office"
+  xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"
+>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Add code here -->>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button type="button" id="ageButton" onclick="computeAge()">
+      Compute your life time!
+    </button>
+    <button type="button" id="colorButton" onclick="changeColor()">
+      Change color!
+    </button>
+
+    <script>
+      function computeAge() {
+        // DO NOT modify any code in this function
+        var currentAge = prompt("What is your current age?");
+        showOnWeb(currentAge, lifeInWeeks);
+      }
+
+      function lifeInWeeks(currentAge) {
+        var years_gap = 90 - currentAge;
+        var days = years_gap*365;
+        var weeks = days/7;
+        var months = years_gap*12;
+
+        return "You have " + days + " days, " + weeks + " weeks, and " + months + " months left.";
+      }
+
+      // 2. Create the showOnWeb() function with the following specification
+      // 2.1 [1 point] Locate the DOM node of 'body' preparing for the HTML changes
+      // 2.2 [2 point] Call the callback function of "lifeInweeks" and prepare the text to display
+      //     in the format “You have x days, y weeks, and z months left.”
+      // 2.3 [2 point] Add a new paragraph node as a child of 'body' node to display the remaining life time. [Hint: use appendChild()]
+      // 2.4 [2 point] Add a new paragraph node before the node of 2.3 to display as "My current age is xx." ; 
+      // xx is the age received from prompt box [Hint: use insertBefore() ]
+
+      // In the next round of input button click, information of the previous round should be removed
+      // 2.5 [2 point] Add code to remove all nodes of paragraphs from the body [Hint: using forEach(), removeChild()]
+
+      function showOnWeb(age, lifeInWeeks) {
+        // 2.4
+        var age_p = document.createElement("p");
+        age_p.appendChild(document.createTextNode("My current age is " + age));
+        // 2.2
+        var p = document.createElement("p");
+        const node = document.createTextNode(lifeInWeeks(age));
+        p.appendChild(node);
+
+        var body = document.body;
+        
+        var elements = document.querySelectorAll("body p");
+        elements.forEach(element => {
+          element.remove();
+        });
+
+        body.appendChild(age_p);
+        body.appendChild(p);
+      }
+
+      // 3. Create the changeColor() function with the following specification
+      // 3.1 changeColor() will be called when user clicks the button id:"colorButton".
+      // 3.2 link the html file with external 'style.css'.
+      // 3.3 [2 points] The class of "blueBG" should be toggled to change background color. [Hint: use classList]
+      function changeColor() {
+        document.body.classList.toggle("blueBG");
+      }
+
+    </script>
+    <p></p>
+  </body>
+</html>
