@@ -34,3 +34,15 @@ function DayCount(currentDateString, eventDateString) {
    Student's code here
    ========================================================================== */
    
+// code here >
+var tr_list = document.getElementsByTagName("tr");
+var str = "";
+for(var i = 2; i < tr_list.length; i++){
+  var dateContent = tr_list[i].childNodes[3].textContent;
+  var intervalPointer = tr_list[i].childNodes[5];
+  var interval = DayCount(dateContent, "9/07/24");
+  intervalPointer.textContent = interval;
+  // check log
+  str += dateContent + " : " + intervalPointer.textContent + "\n";
+}
+console.log(str);
