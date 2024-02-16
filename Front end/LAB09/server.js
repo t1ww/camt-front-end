@@ -13,6 +13,12 @@ const database = mysql.createConnection({
     password: "",
     database: "book_management",
 });
+database.connect((err) => {
+    if (err) {
+        console.log("connection error");
+    }
+    console.log("connected");
+});
 
 // connect
 app.listen(3000, () => {
@@ -28,7 +34,8 @@ app.get("/", (req, res) => {
 app.post("/books/add", (req, res) => {
     const { bookName } = req.body;
     database.execute("INSERT INTO books (BookName) VALUES (?)", [bookName], (error, results) => {
-        if (error) { // error check
+        if (error) {
+            // error check
             console.error("Error inserting into the database: ", error);
             return res.status(500).send("Internal Server Error");
         }
