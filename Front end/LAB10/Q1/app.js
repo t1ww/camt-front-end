@@ -53,6 +53,7 @@ app.post("/", (req, res) => {
                 .then((response) => {
                     var pollutionData = response.data.list[0];
                     console.log(pollutionData);
+                    
                     res.write(`<h1>The Quality of pollution in ${cityname} is ${pollutionData.main.aqi}</h1>`);
                     res.write(`<p>pm2.5 is ${pollutionData.components.pm2_5}</p>`);
                     res.write(`<p>pm10  is ${pollutionData.components.pm10}</p>`);
